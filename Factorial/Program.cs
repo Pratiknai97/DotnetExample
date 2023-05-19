@@ -1,5 +1,7 @@
 ﻿// factorial
 
+using System.Security.Cryptography.X509Certificates;
+
 int num, i, multi;
 
 Console.WriteLine("enter a number");
@@ -11,5 +13,5 @@ for(i= 1; i<=num; i++)
     multi = i * multi;
     Console.WriteLine($"{i} = {multi}");
    }
-
+Console.WriteLine("hello");
 //Console.WriteLine(multi);
