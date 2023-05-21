@@ -1,18 +1,21 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int i, num, max = 0, mini;
+using System.Globalization;
+
+int i,j, num, max = 0, mini = 0;
 
 for (i = 1; i <= 10; i++)
 {
-    Console.WriteLine("please enter a number");
+    Console.WriteLine("Please enter a number:");
     num = Convert.ToInt32(Console.ReadLine());
 
-    if (num > max)
+    if (num < mini)
     {
-        max = num;
+        mini = num;
     }
-    //if (num<mini)
-    //{
-    //    mini = num;
-    //}
 }
-Console.WriteLine(max);
+
+Console.WriteLine( mini);
+//if (num > max)
+//{
+//    max = num;
+//}
