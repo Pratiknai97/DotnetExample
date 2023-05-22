@@ -10,16 +10,19 @@ for (i = 1; i <= 10; i++)
 
     if (i == 1)
     {
+        max = num;
         mini = num;
+
+    }
+    if (num > max)
+    {
+        max = num;
     }
     if (num < mini)
     {
         mini = num;
     }
+    
 }
-
+Console.WriteLine(max);
 Console.WriteLine( mini);
-//if (num > max)
-//
-//    max = num;
-//}
