@@ -63,12 +63,28 @@
 //Console.WriteLine(z);
 
 //new ways to print reverse no of 183
-int x = 183, rem;
+//int x = 183, rem;
 
+//while (x > 0)
+//{
+//    rem = x % 10;
+//    x = x / 10;
+
+//    Console.WriteLine($"{rem},{x}");
+//}
+
+//new count how many no that user pass
+
+int x, rem, count;
+
+Console.WriteLine("enter a Number");
+x = Convert.ToInt32(Console.ReadLine());
+count = 0;
 while (x > 0)
 {
-    rem = x % 10;
-    x = x / 10;
 
-    Console.WriteLine($"{rem},{x}");
+    x = x / 10;
+    count = count + 1;
 }
+
+Console.WriteLine(count);
