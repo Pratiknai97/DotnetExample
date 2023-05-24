@@ -91,15 +91,51 @@
 
 // new sum of digits like 5+4+6 = 15;
 
-int x, rem, sum;
+//int x, rem, sum;
+
+//Console.WriteLine("enter a number");
+//x = Convert.ToInt32(Console.ReadLine());
+//sum = 0;
+//while (x > 0)
+//{
+//    rem = x % 10;
+//    x = x / 10;
+//    sum = sum + rem;
+//}
+//Console.WriteLine(sum);
+
+//new how many even and odd number
+
+int x, rem, even, odd;
 
 Console.WriteLine("enter a number");
 x = Convert.ToInt32(Console.ReadLine());
-sum = 0;
+even = 0;
+odd = 0;
 while (x > 0)
 {
     rem = x % 10;
+    if(rem % 2 == 0)
+    {
+        even = even + 1;
+    }
+    else
+    {
+        odd = odd + 1;
+    }
     x = x / 10;
-    sum = sum + rem;
 }
-Console.WriteLine(sum);
+Console.WriteLine(even);
+Console.WriteLine(odd);
+
+
+
+
+
+
+
+
+
+
+
+
