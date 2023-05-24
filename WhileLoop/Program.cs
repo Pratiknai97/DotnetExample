@@ -106,27 +106,52 @@
 
 //new how many even and odd number
 
-int x, rem, even, odd;
+//int x, rem, even, odd;
 
-Console.WriteLine("enter a number");
-x = Convert.ToInt32(Console.ReadLine());
-even = 0;
-odd = 0;
-while (x > 0)
+//Console.WriteLine("enter a number");
+//x = Convert.ToInt32(Console.ReadLine());
+//even = 0;
+//odd = 0;
+//while (x > 0)
+//{
+//    rem = x % 10;
+//    if(rem % 2 == 0)
+//    {
+//        even = even + 1;
+//    }
+//    else
+//    {
+//        odd = odd + 1;
+//    }
+//    x = x / 10;
+//}
+//Console.WriteLine(even);
+//Console.WriteLine(odd);
+
+// new like to give a party user say yes then print thanks otherwise ask again 
+
+string x;
+
+Console.WriteLine("like to give a party");
+x = Console.ReadLine();
+
+while (x != "yes")
 {
-    rem = x % 10;
-    if(rem % 2 == 0)
-    {
-        even = even + 1;
-    }
-    else
-    {
-        odd = odd + 1;
-    }
-    x = x / 10;
+   
+    Console.WriteLine("like to to give a party");
+    x = Console.ReadLine();
 }
-Console.WriteLine(even);
-Console.WriteLine(odd);
+Console.WriteLine("Thanks");
+
+
+
+
+
+
+
+
+
+
 
 
 
