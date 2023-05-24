@@ -49,15 +49,26 @@
 
 //new print 183 reverse
 
-int x = 183, y = 183, z = 183;
+//int x = 183, y = 183, z = 183;
 
-x = x % 10;//3
+//x = x % 10;//3
 
-y = y / 10;// 
-y = y % 10;// 8
+//y = y / 10;// 
+//y = y % 10;// 8
 
-z = z / 10;
-z = z / 10;//1
-Console.WriteLine(x);
-Console.WriteLine(y);
-Console.WriteLine(z);
+//z = z / 10;
+//z = z / 10;//1
+//Console.WriteLine(x);
+//Console.WriteLine(y);
+//Console.WriteLine(z);
+
+//new ways to print reverse no of 183
+int x = 183, rem;
+
+while (x > 0)
+{
+    rem = x % 10;
+    x = x / 10;
+
+    Console.WriteLine($"{rem},{x}");
+}
