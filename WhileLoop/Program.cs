@@ -75,16 +75,31 @@
 
 //new count how many no that user pass
 
-int x, rem, count;
+//int x, rem, count;
 
-Console.WriteLine("enter a Number");
+//Console.WriteLine("enter a Number");
+//x = Convert.ToInt32(Console.ReadLine());
+//count = 0;
+//while (x > 0)
+//{
+
+//    x = x / 10;
+//    count = count + 1;
+//}
+
+//Console.WriteLine(count);
+
+// new sum of digits like 5+4+6 = 15;
+
+int x, rem, sum;
+
+Console.WriteLine("enter a number");
 x = Convert.ToInt32(Console.ReadLine());
-count = 0;
+sum = 0;
 while (x > 0)
 {
-
+    rem = x % 10;
     x = x / 10;
-    count = count + 1;
+    sum = sum + rem;
 }
-
-Console.WriteLine(count);
+Console.WriteLine(sum);
