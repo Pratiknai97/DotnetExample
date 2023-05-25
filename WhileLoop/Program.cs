@@ -130,37 +130,73 @@
 
 // new like to give a party user say yes then print thanks otherwise ask again 
 
-string x;
+//string x;
 
-Console.WriteLine("like to give a party");
-x = Console.ReadLine();
+//Console.WriteLine("like to give a party");
+//x = Console.ReadLine();
 
-while (x != "yes")
-{
-   
-    Console.WriteLine("like to to give a party");
-    x = Console.ReadLine();
+//while (x != "yes")
+//{
+
+//    Console.WriteLine("like to to give a party");
+//    x = Console.ReadLine();
+//}
+//Console.WriteLine("Thanks");
+
+// new 
+
+int x, num, sum, sub, aaa;
+Console.WriteLine("1 Addition, 2 substraction, 3 exit");
+x = Convert.ToInt32(Console.ReadLine());
+sum = 0;
+sub = 0;
+aaa = 0;
+//while (aaa==0) 
+//{
+//    Console.WriteLine("1 Addition, 2 substraction, 3 exit");
+//    x = Convert.ToInt32(Console.ReadLine());
+
+while (aaa == 0)
+    {
+        if (x == 1)
+        {
+            Console.WriteLine("enter a value");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            sum = sum + num;
+
+            Console.WriteLine("enter a value");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            sum = sum + num;
+
+            Console.WriteLine(sum);
+        }
+        else if (x == 2)
+        {
+            Console.WriteLine("a value");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            sub = num - sub;
+
+            Console.WriteLine("enter a value");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            sub = sub - num;
+            Console.WriteLine(sub);
+        }
+        else if (x == 3)
+        {
+            Console.WriteLine("Thank you for your time");
+            break;  
+        }
+        else
+        {
+        Console.WriteLine("please enter between 1 to 3");
+        }
+    Console.WriteLine("1 Addition, 2 substraction, 3 exit");
+    x = Convert.ToInt32(Console.ReadLine());
 }
-Console.WriteLine("Thanks");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//}
 
