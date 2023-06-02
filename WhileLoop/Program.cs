@@ -143,60 +143,95 @@
 //}
 //Console.WriteLine("Thanks");
 
-// new 
+// new addition, substration and multiplication 
 
-int x, num, sum, sub, aaa;
-Console.WriteLine("1 Addition, 2 substraction, 3 exit");
-x = Convert.ToInt32(Console.ReadLine());
-sum = 0;
-sub = 0;
-aaa = 0;
-//while (aaa==0) 
+//int x, num, sum, sub, aaa;
+//Console.WriteLine("1 Addition, 2 substraction, 3 exit");
+//x = Convert.ToInt32(Console.ReadLine());
+//sum = 0;
+//sub = 0;
+//aaa = 0;
+////while (aaa==0) 
+////{
+////    Console.WriteLine("1 Addition, 2 substraction, 3 exit");
+////    x = Convert.ToInt32(Console.ReadLine());
+
+//while (aaa == 0)
 //{
+//    if (x == 1)
+//    {
+//        Console.WriteLine("enter a value");
+//        num = Convert.ToInt32(Console.ReadLine());
+
+//        sum = sum + num;
+
+//        Console.WriteLine("enter a value");
+//        num = Convert.ToInt32(Console.ReadLine());
+
+//        sum = sum + num;
+
+//        Console.WriteLine(sum);
+//    }
+//    else if (x == 2)
+//    {
+//        Console.WriteLine("a value");
+//        num = Convert.ToInt32(Console.ReadLine());
+
+//        sub = num - sub;
+
+//        Console.WriteLine("enter a value");
+//        num = Convert.ToInt32(Console.ReadLine());
+
+//        sub = sub - num;
+//        Console.WriteLine(sub);
+//    }
+//    else if (x == 3)
+//    {
+//        Console.WriteLine("Thank you for your time");
+//        break;
+//    }
+//    else
+//    {
+//        Console.WriteLine("please enter between 1 to 3");
+//    }
 //    Console.WriteLine("1 Addition, 2 substraction, 3 exit");
 //    x = Convert.ToInt32(Console.ReadLine());
-
-while (aaa == 0)
-    {
-        if (x == 1)
-        {
-            Console.WriteLine("enter a value");
-            num = Convert.ToInt32(Console.ReadLine());
-
-            sum = sum + num;
-
-            Console.WriteLine("enter a value");
-            num = Convert.ToInt32(Console.ReadLine());
-
-            sum = sum + num;
-
-            Console.WriteLine(sum);
-        }
-        else if (x == 2)
-        {
-            Console.WriteLine("a value");
-            num = Convert.ToInt32(Console.ReadLine());
-
-            sub = num - sub;
-
-            Console.WriteLine("enter a value");
-            num = Convert.ToInt32(Console.ReadLine());
-
-            sub = sub - num;
-            Console.WriteLine(sub);
-        }
-        else if (x == 3)
-        {
-            Console.WriteLine("Thank you for your time");
-            break;  
-        }
-        else
-        {
-        Console.WriteLine("please enter between 1 to 3");
-        }
-    Console.WriteLine("1 Addition, 2 substraction, 3 exit");
-    x = Convert.ToInt32(Console.ReadLine());
-}
-
 //}
+
+// new 
+
+//int i, j, num, count;
+
+//Console.WriteLine("Enter a any number");
+//num = Convert.ToInt32(Console.ReadLine());
+
+//while ()
+//{
+//    for (i = 1; i <= num; i++)
+
+//    {
+//        count = 0;
+//        for (j = 1; j <= i; j++)
+//        {
+//            if (i % j == 0)
+//            {
+//                Console.WriteLine(j);
+//                count++;
+//            }
+
+
+//            if (count == 2)
+//            {
+//                Console.WriteLine(i);
+//            }
+//        }
+
+//    }
+//}
+
+
+
+
+
+
 
