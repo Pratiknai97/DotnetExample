@@ -121,16 +121,57 @@ int Factors(int a)
             count++;
         }
     }
-        return count;
-    
-}
-for (int i = 1; i <= 5; i++)
-{
-   
-    int totalfac = Factors(i);
-    Console.WriteLine($"{i}={totalfac}");
+    return count;
 
 }
+//for (int i = 1; i <= 5; i++)
+//{
+
+//    int totalfac = Factors(i);
+//    Console.WriteLine($"{i}={totalfac}");
+
+//}
+
+// new get a number and find is it prime or not
+
+bool prime(int n)
+{
+    int count;
+    count=Factors(n);
+    //if (count == 2)
+    //{
+    //    return true;
+    //}
+    //else
+    //{
+    //    return false;
+    //}
+    return (count == 2);// there is no need if and else condition can directly call true and false in bool
+}
+//bool x = prime(4);
+//Console.WriteLine(x);
+
+// new get all prime numbers from 2 to 20.
+
+for (int i = 1; i<=20; i++)
+{   
+   
+    bool y = prime(i);
+    if(y == true)
+    {
+        Console.WriteLine(i);
+    }
+   // Console.WriteLine(y);
+}
+
+
+
+
+
+
+
+
+
 
 
 
