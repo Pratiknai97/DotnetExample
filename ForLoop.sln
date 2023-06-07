@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximumAndMinimumValue", "M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhileLoop", "WhileLoop\WhileLoop.csproj", "{1D1A6C94-AE3A-4514-872B-605AD3CBAFD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoWhileLoop", "DoWhileLoop\DoWhileLoop.csproj", "{C5B6464A-D286-42AB-AD8E-98CF4CB1529B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoWhileLoop", "DoWhileLoop\DoWhileLoop.csproj", "{C5B6464A-D286-42AB-AD8E-98CF4CB1529B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDefineFunction", "UserDefineFunction\UserDefineFunction.csproj", "{8ED30E54-63FB-41A2-A7E4-061BB5754144}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserDefineFunction", "UserDefineFunction\UserDefineFunction.csproj", "{8ED30E54-63FB-41A2-A7E4-061BB5754144}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayDemo", "ArrayDemo\ArrayDemo.csproj", "{70F6C456-4090-4F62-8B5D-63050C18535D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{8ED30E54-63FB-41A2-A7E4-061BB5754144}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ED30E54-63FB-41A2-A7E4-061BB5754144}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ED30E54-63FB-41A2-A7E4-061BB5754144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F6C456-4090-4F62-8B5D-63050C18535D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F6C456-4090-4F62-8B5D-63050C18535D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F6C456-4090-4F62-8B5D-63050C18535D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F6C456-4090-4F62-8B5D-63050C18535D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

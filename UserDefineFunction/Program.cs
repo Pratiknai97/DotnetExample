@@ -34,6 +34,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.IO.Pipes;
+using System.Security.AccessControl;
 
 //int maximum(int a, int b)
 //{
@@ -153,17 +154,25 @@ bool prime(int n)
 
 // new get all prime numbers from 2 to 20.
 
-for (int i = 1; i<=20; i++)
-{   
-   
-    bool y = prime(i);
-    if(y == true)
-    {
-        Console.WriteLine(i);
-    }
-   // Console.WriteLine(y);
-}
+//for (int i = 1; i <= 20; i++)
+//{
 
+//    bool y = prime(i);
+//    if (y == true)
+//    {
+//        Console.WriteLine(i);
+//    }
+
+//}
+//new To print next prime number
+
+int GetNextPrime(int start)
+{ 
+  
+
+
+
+}
 
 
 
