@@ -58,36 +58,72 @@
 
 using System.Xml.Schema;
 
-int[] A = new int[5];
-int[] B = new int[5];
-int[] C = new int[10];
+//int[] A = new int[5];
+//int[] B = new int[5];
+//int[] C = new int[10];
 
 
-for (int i = 0;i < A.Length;i++)
-{
-    Console.WriteLine("Enter a Value");
-    A[i] = Convert.ToInt32(Console.ReadLine());
-    C[i] = A[i];
-   
-}
-for(int i = 0;i < B.Length; i++)
-{
+//for (int i = 0;i < A.Length;i++)
+//{
+//    Console.WriteLine("Enter a Value");
+//    A[i] = Convert.ToInt32(Console.ReadLine());
+//    C[i] = A[i];
 
-    Console.WriteLine("Again value for B");
-    B[i] = Convert.ToInt32(Console.ReadLine());
-    C[A.Length+i] = B[i];
+//}
+//for(int i = 0;i < B.Length; i++)
+//{
 
-}
-for (int i = 0; i < C.Length; i++)
-{
-    Console.WriteLine(C[i]);
+//    Console.WriteLine("Again value for B");
+//    B[i] = Convert.ToInt32(Console.ReadLine());
+//    C[A.Length+i] = B[i];
+
+//}
+//for (int i = 0; i < C.Length; i++)
+//{
+//    Console.WriteLine(C[i]);
+
+//}
+
+//new get 5 numbers from the user and again get one number from user and count how many numbers repeat
+
+//int[] Number = new int[5];
+
+//int count = 0;
+
+//for (int i = 0; i < 5; i++)
+//{
+//    Console.WriteLine("Enter a 5 Value");
+//    Number[i] = Convert.ToInt32(Console.ReadLine());
+
     
+
+//}
+
+//Console.WriteLine("enter a value");
+//int value = Convert.ToInt32(Console.ReadLine());
+//for (int i = 0; i < 5; i++)
+//{
+//    if (Number[i] == value)
+//    {
+//        count++;
+//    }
+    
+//}
+
+//    Console.WriteLine($"No of Occurance {value} is {count}");
+
+//new enter a 5 names and print
+
+string[] Name = new string[5];
+
+Name[0] = "pratik";
+Name[1] = "Sanket";
+Name[2] = "Jay";
+Name[3] = "Akshar";
+Name[4] = "Dhaval";
+
+
+for(int i = 0; i < Name.Length; i++)
+{
+    Console.WriteLine(Name[i]);
 }
-
-
-
-
-
-
-
-
