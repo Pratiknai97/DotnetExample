@@ -56,6 +56,7 @@
 
 //To Marge 2 int array into one.
 
+using System.Runtime.Serialization.Formatters;
 using System.Xml.Schema;
 
 //int[] A = new int[5];
@@ -95,7 +96,7 @@ using System.Xml.Schema;
 //    Console.WriteLine("Enter a 5 Value");
 //    Number[i] = Convert.ToInt32(Console.ReadLine());
 
-    
+
 
 //}
 
@@ -107,23 +108,52 @@ using System.Xml.Schema;
 //    {
 //        count++;
 //    }
-    
+
 //}
 
 //    Console.WriteLine($"No of Occurance {value} is {count}");
 
 //new enter a 5 names and print
 
-string[] Name = new string[5];
+//string[] Name = new string[5];
 
-Name[0] = "pratik";
-Name[1] = "Sanket";
-Name[2] = "Jay";
-Name[3] = "Akshar";
-Name[4] = "Dhaval";
+//Name[0] = "pratik";
+//Name[1] = "Sanket";
+//Name[2] = "Jay";
+//Name[3] = "Akshar";
+//Name[4] = "Dhaval";
 
 
-for(int i = 0; i < Name.Length; i++)
+//for (int i = 0; i < Name.Length; i++)
+//{
+//    Console.WriteLine(Name[i]);
+//}
+
+string[] Name = new string[3];
+int[] RollNo = new int[3];
+int[] Sem = new int[3];
+
+
+for (int i = 0; i < 3; i++)
 {
-    Console.WriteLine(Name[i]);
+    Console.WriteLine("Enter a Student Name");
+    Name[i] = Console.ReadLine();
+
 }
+for(int i = 0;i < 3; i++)
+{
+    Console.WriteLine("Enter a Roll No");
+    RollNo[i] = Convert.ToInt32(Console.ReadLine());
+}
+for(int i = 0;i<3 ; i++)
+{
+    Console.WriteLine("Enter a Sem");
+    Sem[i] = Convert.ToInt32(Console.ReadLine());
+}
+for (int i = 0; i < 3; i++)
+{
+    Console.WriteLine($"{Name[i]}={RollNo[i]}={Sem[i]}");
+
+}
+
+
