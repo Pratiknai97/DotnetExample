@@ -34,6 +34,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.IO.Pipes;
+using System.Reflection.Metadata.Ecma335;
 using System.Security.AccessControl;
 
 //int maximum(int a, int b)
@@ -112,19 +113,19 @@ using System.Security.AccessControl;
 
 //new get factors and total of it
 
-int Factors(int a)
-{
-    int count = 0;
-    for (int i = 1; i <= a; i++)
-    {
-        if (a % i == 0)
-        {
-            count++;
-        }
-    }
-    return count;
+//int Factors(int a)
+//{
+//    int count = 0;
+//    for (int i = 1; i <= a; i++)
+//    {
+//        if (a % i == 0)
+//        {
+//            count++;
+//        }
+//    }
+//    return count;
 
-}
+//}
 //for (int i = 1; i <= 5; i++)
 //{
 
@@ -135,20 +136,20 @@ int Factors(int a)
 
 // new get a number and find is it prime or not
 
-bool prime(int n)
-{
-    int count;
-    count=Factors(n);
-    //if (count == 2)
-    //{
-    //    return true;
-    //}
-    //else
-    //{
-    //    return false;
-    //}
-    return (count == 2);// there is no need if and else condition can directly call true and false in bool
-}
+//bool prime(int n)
+//{
+//    int count;
+//    count=Factors(n);
+//    //if (count == 2)
+//    //{
+//    //    return true;
+//    //}
+//    //else
+//    //{
+//    //    return false;
+//    //}
+//    return (count == 2);// there is no need if and else condition can directly call true and false in bool
+//}
 //bool x = prime(4);
 //Console.WriteLine(x);
 
@@ -166,15 +167,35 @@ bool prime(int n)
 //}
 //new To print next prime number
 
-int GetNextPrime(int start)
-{ 
-  
+//int GetNextPrime(int start)
+//{
+
+//    bool nextPrime = prime(start + 1);
+
+//    while (true)
+//    {
+
+//    }
 
 
+//}
 
+
+// recursion method 
+
+int Factorial (int n)
+{
+    if (n > 1)
+    {
+        return n * Factorial(n - 1);
+    }
+    else
+    {
+        return 1;
+    }
 }
-
-
+int num = Factorial(4);
+Console.WriteLine(num);
 
 
 
