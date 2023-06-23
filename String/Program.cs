@@ -37,10 +37,12 @@
 //    Console.WriteLine(str1 + "and" + str5 + "are not equal");
 //}
 // toupper case and lower case
-//string data = "BBC";
-//string data2 = "ABC";
+//string data = "ABC";
+//string data2 = "BBC";
 //int res = data.CompareTo(data2);
 //Console.WriteLine(res);
+
+// Toupper and Lower case
 //data = "ncoisnonKLNSVIN";
 //data2=data.ToUpper();
 //Console.Write(data2);
@@ -48,7 +50,7 @@
 //Console.Write(data2);
 
 //this is for trimStart () function
-//data = "  A   AB   ABC   ";
+//string data = "  A   AB   ABC   ";
 //data2 = data.TrimStart();
 //Console.WriteLine(data);
 //Console.WriteLine(data2);
@@ -65,16 +67,16 @@
 
 //new this is for used for data trim
 
-//data2 = data.Trim();
+//string data2 = data.Trim();
 //Console.WriteLine(data);
 //Console.WriteLine(data2);
 //Console.WriteLine(data.Length);
 //Console.WriteLine(data2.Length);
 
-//new index of mathed
+//new index of mathed get the position of letter
 
 
-        string str = "Helloworld";
+string str = "Helloworld";
 
         int index1 = str.IndexOf('o');
 
@@ -83,15 +85,17 @@
        int index2 = str.IndexOf('K');
        Console.WriteLine("This value of Character 'K' is " + index2);
 
-// new way to find index method
+// new way to find indexOf() method
 
 string str2 = "HelloWorld";
 
 // Finding the index of character
 // which is present in string
 // this will show the value 0
-int index3 = str2.IndexOf("H",0);
+int index3 = str2.IndexOf("H", 0);
 Console.WriteLine("The index value of character 'H'" + "With start index 0 is" + index3);
 
 int index4 = str2.IndexOf("H", 5);
 Console.WriteLine("The index value of character 'H'" + "With start index 5 is" + index4);
+
+//// 
