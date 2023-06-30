@@ -27,3 +27,7 @@ s2.TravellingAllowance = 12000;
 
 Console.WriteLine($"Salesmen ID = {s2.Id}, Name = {s2.Name}, Salary = {s2.Salary}, DailyAllowance = {s2.DailyAllowance}, travelling allowance = {s2.TravellingAllowance}");
 
+// Protected members are only visible in derived class.
+
+DerivedProtectedDemo demo = new DerivedProtectedDemo();
+
