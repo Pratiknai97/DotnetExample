@@ -18,11 +18,11 @@ namespace Inheritance
             }
         }
     }
-    public class C : A
-    {
-        public int Getvalue()
-        {
-            return value;
-        }
-    }
+    //public class C : A
+    //{
+    //    public int Getvalue()
+    //    {
+    //        return value;
+    //    }
+    //}
 }
