@@ -1,0 +1,24 @@
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EFcore1.Model
+{
+    internal class Student
+    {
+        public int ID { get; set; }
+        public string SName { get; set; }
+
+        public int Semister { get; set; }
+        public string Hobby { get; set; }
+
+        public override string ToString()
+        {
+            return JsonConvert.SerializeObject(this);
+        }
+
+    }
+}
