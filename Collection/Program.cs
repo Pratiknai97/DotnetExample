@@ -32,7 +32,7 @@ foreach (Product product in products)
 {
     Console.WriteLine($"Product:{product.ID},Name:{product.Name},Rate:{product.Rate}");
 }
-var Result = products.Where(x=>x.Rate>20000).ToList();
+var Result = products.Where(x=>x.Rate>20000).ToList();// this is a lambda expression
 Console.WriteLine(Result.Count);
 foreach(Product product in Result)
 {
