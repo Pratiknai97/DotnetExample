@@ -18,7 +18,7 @@ namespace Inheritance
         //{
         //    return 2 * (length + width);
         //}
-        public override int Area()
+        public override int Area()//argument written type method name
         {
             return base.Area();
         }
