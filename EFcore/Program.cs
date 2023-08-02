@@ -13,7 +13,7 @@ foreach(var record in list1)
 var Result = myDbContects.Student.Where(x=>x.ID==1).FirstOrDefault();
 Console.WriteLine(Result.ToString());
 Console.WriteLine(Result);
-
+// add a new record
 Student S1 = new Student();
 S1.ID = 0;
 S1.SName = "Gaurang";
@@ -23,10 +23,20 @@ S1.Hobby = "Watching Movies";
 myDbContects.Student.Add(S1);
 myDbContects.SaveChanges();
 // Update record
+
 var update = myDbContects.Student.FirstOrDefault(x => x.ID == 2);
-update.SName = "Rakesh";
-myDbContects.SaveChanges();
+if(update != null)
+{
+    update.SName = "Rakesh";
+    myDbContects.SaveChanges();
+}
+
+
+
 //new delete
 var Delete = myDbContects.Student.FirstOrDefault(x => x.ID == 5);
-myDbContects.Student.Remove(Delete);
-myDbContects.SaveChanges();
+if(Delete != null)
+{
+    myDbContects.Student.Remove(Delete);
+    myDbContects.SaveChanges();
+}
