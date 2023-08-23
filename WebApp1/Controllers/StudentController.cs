@@ -10,7 +10,13 @@ namespace WebApp1.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
-        private MyDbcontext myDbcontext = new MyDbcontext();
+        private readonly MyDbcontext myDbcontext;
+
+        //private MyDbcontext myDbcontext = new MyDbcontext();
+        public StudentController(MyDbcontext myDbcontext)
+        {
+            this.myDbcontext = myDbcontext;
+        }
         [HttpGet]
 
         public IActionResult Getdata()
