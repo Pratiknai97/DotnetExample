@@ -4,7 +4,7 @@ namespace WebApp1.Services
 {
     public class Circle : IShape
     {
-        public string Drow()
+        public string Draw()
         {
             return "Circle";
         }

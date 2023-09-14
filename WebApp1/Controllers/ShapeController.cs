@@ -17,7 +17,7 @@ namespace WebApp1.Controllers
         [HttpGet]
         public IActionResult Getdata() 
         {
-            return Ok(shape.Drow());
+            return Ok(shape.Draw());
         }
     }
 }

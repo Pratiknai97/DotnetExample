@@ -2,7 +2,7 @@
 {
     public interface IShape
     {
-        public string Drow();
+        public string Draw();
         
     }
 }
