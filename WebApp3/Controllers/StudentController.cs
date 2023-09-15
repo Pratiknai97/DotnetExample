@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Routing.Constraints;
 using WebApp3.Data;
 using WebApp3.Model;
 
@@ -11,7 +12,7 @@ namespace WebApp3.Controllers
     {
         private readonly MyDbContext myDbContext;
 
-        public StudentController(MyDbContext myDbContext) 
+        public StudentController(MyDbContext myDbContext)
         {
             this.myDbContext = myDbContext;
         }
@@ -24,39 +25,42 @@ namespace WebApp3.Controllers
             var resultid = myDbContext.Student.ToList();
             if (resultid == null)
             {
-                return Ok(resultid);
+                return NotFound(resultid);
             }
             return Ok(resultid);
         }
-        //[HttpPost]
-        //public IActionResult Postdata(Student students)
-        //{
-        //    myDbContext.student.Add(students);
-        //    myDbContext.SaveChanges();
-        //    return Ok(students);
-        //}
+        [HttpPost]
+        public IActionResult Postdata(Student students)
+        {
+
+            myDbContext.Student.Add(students);
+            myDbContext.SaveChanges();
+            return Ok(students);
+        }
 
         [HttpPut]
-       public IActionResult Putdata(Student student)
+        public IActionResult Putdata(Student student)
         {
-            var putdata = myDbContext.Student.Where(x=>x.ID == student.ID).FirstOrDefault();
+            var putdata = myDbContext.Student.Where(x => x.ID == student.ID).FirstOrDefault();
             if (putdata == null)
             {
                 return Ok(putdata);
             }
             putdata.SName = student.SName;
-            putdata.Semister =  student.Semister;
+            putdata.Semister = student.Semister;
             putdata.Hobby = student.Hobby;
+
             myDbContext.SaveChanges();
             return Ok(putdata);
+
         }
         [HttpDelete]
         [Route("{id}")]
 
         public IActionResult Delete(int id)
         {
-            var Deletedata = myDbContext.Student.Where(x=>x.ID ==id).FirstOrDefault();
-            if(Deletedata == null)
+            var Deletedata = myDbContext.Student.Where(x => x.ID == id).FirstOrDefault();
+            if (Deletedata == null)
             {
                 return NotFound(Deletedata);
             }
@@ -64,5 +68,15 @@ namespace WebApp3.Controllers
             myDbContext.SaveChanges();
             return Ok(Deletedata);
         }
+        [HttpGet]
+        [Route("{marks}")]
+        public IActionResult GetTotalMarks(int marks)
+        {
+
+            var Totalmarks = myDbContext.Student.Where(x => x.Marks > marks).ToList ();
+            
+            return Ok(Totalmarks);
+        }
+        
     }
 }

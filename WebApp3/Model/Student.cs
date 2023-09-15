@@ -6,5 +6,7 @@
         public String SName { get; set; }
         public int Semister { get; set; }
         public string Hobby { get; set; }
+
+        public int Marks { get; set; }
     }
 }
